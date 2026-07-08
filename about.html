@@ -26,7 +26,457 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+ 
+ 
+  <style>
+  /* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#2d3748;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h2{
+    font-weight:700;
+}
+
+.text-muted{
+    font-size:15px;
+}
+
+/* ===========================
+   Progress Bar
+=========================== */
+
+.progress{
+    height:10px;
+    border-radius:50px;
+    background:#e9ecef;
+}
+
+.progress-bar{
+    border-radius:50px;
+    transition:.4s;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card-body{
+    padding:35px;
+}
+
+/* ===========================
+   Form Heading
+=========================== */
+
+.form-step h4{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.form-step h4 i{
+    color:#0d6efd;
+    margin-right:10px;
+}
+
+/* ===========================
+   Form Controls
+=========================== */
+
+.form-label{
+    font-weight:500;
+    margin-bottom:8px;
+}
+
+.form-control,
+.form-select{
+
+    height:50px;
+    border-radius:10px;
+    border:1px solid #dcdcdc;
+    transition:.3s;
+    font-size:15px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    box-shadow:none;
+    border-color:#0d6efd;
+
+}
+
+/* File Upload */
+
+input[type=file]{
+
+    padding:10px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn{
+
+    border-radius:10px;
+    padding:10px 25px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#0d6efd;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline-secondary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   Multi Step
+=========================== */
+
+.form-step{
+
+    display:none;
+    animation:fade .4s ease;
+
+}
+
+.form-step.active{
+
+    display:block;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateX(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===========================
+   Summary Card
+=========================== */
+
+.summary-card{
+
+    top:30px;
+
+}
+
+.summary-card h4{
+
+    font-weight:600;
+
+}
+
+.summary-card img{
+
+    object-fit:cover;
+    border:5px solid #e9ecef;
+
+}
+
+/* ===========================
+   Sidebar Text
+=========================== */
+
+.summary-card p{
+
+    margin-bottom:10px;
+    font-size:14px;
+
+}
+
+.summary-card strong{
+
+    color:#495057;
+
+}
+
+/* ===========================
+   Price Table
+=========================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+.table-primary{
+
+    background:#edf4ff !important;
+
+}
+
+/* ===========================
+   Radio Buttons
+=========================== */
+
+.form-check{
+
+    padding:12px;
+    border:1px solid #e6e6e6;
+    border-radius:10px;
+    margin-bottom:12px;
+    transition:.3s;
+
+}
+
+.form-check:hover{
+
+    border-color:#0d6efd;
+    background:#f8fbff;
+
+}
+
+.form-check-input{
+
+    cursor:pointer;
+
+}
+
+.form-check-label{
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   Checkbox
+=========================== */
+
+.form-check-input:checked{
+
+    background:#0d6efd;
+    border-color:#0d6efd;
+
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.table td{
+
+    padding:12px 0;
+
+}
+
+/* ===========================
+   Sticky Sidebar
+=========================== */
+
+.sticky-top{
+
+    z-index:10;
+
+}
+
+/* ===========================
+   Photo
+=========================== */
+
+#photoPreview{
+
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    background:#f1f1f1;
+
+}
+
+/* ===========================
+   Inputs Hover
+=========================== */
+
+.form-control:hover,
+.form-select:hover{
+
+    border-color:#0d6efd;
+
+}
+
+/* ===========================
+   Section Divider
+=========================== */
+
+hr{
+
+    opacity:.15;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:991px){
+
+.summary-card{
+
+    margin-top:25px;
+    position:relative !important;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.form-step h4{
+
+    font-size:20px;
+
+}
+
+.btn{
+
+    width:100%;
+    margin-bottom:10px;
+
+}
+
+.d-flex{
+
+    flex-direction:column;
+
+}
+
+.text-end{
+
+    text-align:center !important;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.container{
+
+    padding-left:15px;
+    padding-right:15px;
+
+}
+
+.card{
+
+    border-radius:12px;
+
+}
+
+#photoPreview{
+
+    width:120px;
+    height:120px;
+
+}
+
+.form-control,
+.form-select{
+
+    height:46px;
+
+}
+
+}
+
+/* ===========================
+   Nice Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#b6c2d1;
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0d6efd;
+
+}
+ 
+  </style>
 </head>
 
 <body class="about-page">
@@ -73,346 +523,666 @@
     <section id="travel-about" class="travel-about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+ 
 
+    <div class="container py-5">
 
-
-
-    <!-- STEP BAR -->
-    <div class="stepper mb-5">
-
-        <div class="step active">
-            <div class="circle">1</div>
-            <span>Trip Details</span>
+        <!-- Heading -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Visa Application Form</h2>
+            <p class="text-muted">Complete your application in three simple steps.</p>
         </div>
 
-        <div class="line"></div>
-
-        <div class="step">
-            <div class="circle">2</div>
-            <span>Your Information</span>
+        <!-- Progress -->
+        <div class="progress mb-4" style="height:10px;">
+            <div id="progressBar" class="progress-bar bg-primary" style="width:33%"></div>
         </div>
 
-        <div class="line"></div>
+        <div class="row">
 
-        <div class="step">
-            <div class="circle">3</div>
-            <span>Payment</span>
-        </div>
+            <!-- ================= Left Form ================= -->
+            <div class="col-lg-8">
 
-    </div>
+                <div class="card shadow border-0">
 
-    <div class="row g-4">
+                    <div class="card-body">
 
-        <!-- LEFT COLUMN -->
+                        <!-- STEP 1 -->
+                        <div class="form-step active">
 
-        <div class="col-lg-8">
+                            <h4 class="mb-4">
+                                <i class="bi bi-person-circle"></i>
+                                Personal Information
+                            </h4>
 
-            <div class="card shadow-sm border-0">
+                            <div class="row">
 
-                <div class="card-body p-4">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" id="firstName" class="form-control summary-input" required>
+                                </div>
 
-                    <h3 class="mb-4">
-                        Your Trip Details
-                    </h3>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" id="lastName" class="form-control summary-input" required>
+                                </div>
 
-                    <form id="visaForm">
+                                <div class="col-md-6 mb-3">
+                                    <label>Email</label>
+                                    <input type="email" id="email" class="form-control summary-input" required>
+                                </div>
+										
+											
+                                <div class="col-md-6 mb-3">
+                                    <label>Phone</label>
+                                    <input type="tel" id="phone" class="form-control summary-input" required>
+                                </div>
 
-                        <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label>Nationality</label>
+                                    <select id="country" class="form-select summary-input" required>
+                                        <option value="">Select Country</option>
+                                        
+    <option value="af">Afghanistan</option>
+    <option value="al">Albania</option>
+    <option value="dz">Algeria</option>
+    <option value="ad">Andorra</option>
+    <option value="ao">Angola</option>
+    <option value="ag">Antigua and Barbuda</option>
+    <option value="ar">Argentina</option>
+    <option value="am">Armenia</option>
+    <option value="au">Australia</option>
+    <option value="at">Austria</option>
+    <option value="az">Azerbaijan</option>
+    <option value="bs">Bahamas</option>
+    <option value="bh">Bahrain</option>
+    <option value="bd">Bangladesh</option>
+    <option value="bb">Barbados</option>
+    <option value="by">Belarus</option>
+    <option value="be">Belgium</option>
+    <option value="bz">Belize</option>
+    <option value="bj">Benin</option>
+    <option value="bt">Bhutan</option>
+    <option value="bo">Bolivia</option>
+    <option value="ba">Bosnia and Herzegovina</option>
+    <option value="bw">Botswana</option>
+    <option value="br">Brazil</option>
+    <option value="bn">Brunei</option>
+    <option value="bg">Bulgaria</option>
+    <option value="bf">Burkina Faso</option>
+    <option value="bi">Burundi</option>
+    <option value="cv">Cabo Verde</option>
+    <option value="kh">Cambodia</option>
+    <option value="cm">Cameroon</option>
+    <option value="ca">Canada</option>
+    <option value="cf">Central African Republic</option>
+    <option value="td">Chad</option>
+    <option value="cl">Chile</option>
+    <option value="cn">China</option>
+    <option value="co">Colombia</option>
+    <option value="km">Comoros</option>
+    <option value="cg">Congo</option>
+    <option value="cd">Congo (DRC)</option>
+    <option value="cr">Costa Rica</option>
+    <option value="ci">Côte d'Ivoire</option>
+    <option value="hr">Croatia</option>
+    <option value="cu">Cuba</option>
+    <option value="cy">Cyprus</option>
+    <option value="cz">Czech Republic</option>
+    <option value="dk">Denmark</option>
+    <option value="dj">Djibouti</option>
+    <option value="dm">Dominica</option>
+    <option value="do">Dominican Republic</option>
+    <option value="ec">Ecuador</option>
+    <option value="eg">Egypt</option>
+    <option value="sv">El Salvador</option>
+    <option value="gq">Equatorial Guinea</option>
+    <option value="er">Eritrea</option>
+    <option value="ee">Estonia</option>
+    <option value="sz">Eswatini</option>
+    <option value="et">Ethiopia</option>
+    <option value="fj">Fiji</option>
+    <option value="fi">Finland</option>
+    <option value="fr">France</option>
+    <option value="ga">Gabon</option>
+    <option value="gm">Gambia</option>
+    <option value="ge">Georgia</option>
+    <option value="de">Germany</option>
+    <option value="gh">Ghana</option>
+    <option value="gr">Greece</option>
+    <option value="gd">Grenada</option>
+    <option value="gt">Guatemala</option>
+    <option value="gn">Guinea</option>
+    <option value="gw">Guinea-Bissau</option>
+    <option value="gy">Guyana</option>
+    <option value="ht">Haiti</option>
+    <option value="hn">Honduras</option>
+    <option value="hu">Hungary</option>
+    <option value="is">Iceland</option>
+    <option value="in">India</option>
+    <option value="id">Indonesia</option>
+    <option value="ir">Iran</option>
+    <option value="iq">Iraq</option>
+    <option value="ie">Ireland</option>
+    <option value="il">Israel</option>
+    <option value="it">Italy</option>
+    <option value="jm">Jamaica</option>
+    <option value="jp">Japan</option>
+    <option value="jo">Jordan</option>
+    <option value="kz">Kazakhstan</option>
+    <option value="ke">Kenya</option>
+    <option value="ki">Kiribati</option>
+    <option value="kp">North Korea</option>
+    <option value="kr">South Korea</option>
+    <option value="kw">Kuwait</option>
+    <option value="kg">Kyrgyzstan</option>
+    <option value="la">Laos</option>
+    <option value="lv">Latvia</option>
+    <option value="lb">Lebanon</option>
+    <option value="ls">Lesotho</option>
+    <option value="lr">Liberia</option>
+    <option value="ly">Libya</option>
+    <option value="li">Liechtenstein</option>
+    <option value="lt">Lithuania</option>
+    <option value="lu">Luxembourg</option>
+    <option value="mg">Madagascar</option>
+    <option value="mw">Malawi</option>
+    <option value="my">Malaysia</option>
+    <option value="mv">Maldives</option>
+    <option value="ml">Mali</option>
+    <option value="mt">Malta</option>
+    <option value="mh">Marshall Islands</option>
+    <option value="mr">Mauritania</option>
+    <option value="mu">Mauritius</option>
+    <option value="mx">Mexico</option>
+    <option value="fm">Micronesia</option>
+    <option value="md">Moldova</option>
+    <option value="mc">Monaco</option>
+    <option value="mn">Mongolia</option>
+    <option value="me">Montenegro</option>
+    <option value="ma">Morocco</option>
+    <option value="mz">Mozambique</option>
+    <option value="mm">Myanmar</option>
+    <option value="na">Namibia</option>
+    <option value="nr">Nauru</option>
+    <option value="np">Nepal</option>
+    <option value="nl">Netherlands</option>
+    <option value="nz">New Zealand</option>
+    <option value="ni">Nicaragua</option>
+    <option value="ne">Niger</option>
+    <option value="ng">Nigeria</option>
+    <option value="mk">North Macedonia</option>
+    <option value="no">Norway</option>
+    <option value="om">Oman</option>
+    <option value="pk">Pakistan</option>
+    <option value="pw">Palau</option>
+    <option value="ps">Palestine</option>
+    <option value="pa">Panama</option>
+    <option value="pg">Papua New Guinea</option>
+    <option value="py">Paraguay</option>
+    <option value="pe">Peru</option>
+    <option value="ph">Philippines</option>
+    <option value="pl">Poland</option>
+    <option value="pt">Portugal</option>
+    <option value="qa">Qatar</option>
+    <option value="ro">Romania</option>
+    <option value="ru">Russia</option>
+    <option value="rw">Rwanda</option>
+    <option value="kn">Saint Kitts and Nevis</option>
+    <option value="lc">Saint Lucia</option>
+    <option value="vc">Saint Vincent and the Grenadines</option>
+    <option value="ws">Samoa</option>
+    <option value="sm">San Marino</option>
+    <option value="st">Sao Tome and Principe</option>
+    <option value="sa">Saudi Arabia</option>
+    <option value="sn">Senegal</option>
+    <option value="rs">Serbia</option>
+    <option value="sc">Seychelles</option>
+    <option value="sl">Sierra Leone</option>
+    <option value="sg">Singapore</option>
+    <option value="sk">Slovakia</option>
+    <option value="si">Slovenia</option>
+    <option value="sb">Solomon Islands</option>
+    <option value="so">Somalia</option>
+    <option value="za">South Africa</option>
+    <option value="ss">South Sudan</option>
+    <option value="es">Spain</option>
+    <option value="lk">Sri Lanka</option>
+    <option value="sd">Sudan</option>
+    <option value="sr">Suriname</option>
+    <option value="se">Sweden</option>
+    <option value="ch">Switzerland</option>
+    <option value="sy">Syria</option>
+    <option value="tw">Taiwan</option>
+    <option value="tj">Tajikistan</option>
+    <option value="tz">Tanzania</option>
+    <option value="th">Thailand</option>
+    <option value="tl">Timor-Leste</option>
+    <option value="tg">Togo</option>
+    <option value="to">Tonga</option>
+    <option value="tt">Trinidad and Tobago</option>
+    <option value="tn">Tunisia</option>
+    <option value="tr">Turkey</option>
+    <option value="tm">Turkmenistan</option>
+    <option value="tv">Tuvalu</option>
+    <option value="ug">Uganda</option>
+    <option value="ua">Ukraine</option>
+    <option value="ae">United Arab Emirates</option>
+    <option value="gb">United Kingdom</option>
+    <option value="us">United States</option>
+    <option value="uy">Uruguay</option>
+    <option value="uz">Uzbekistan</option>
+    <option value="vu">Vanuatu</option>
+    <option value="va">Vatican City</option>
+    <option value="ve">Venezuela</option>
+    <option value="vn">Vietnam</option>
+    <option value="ye">Yemen</option>
+    <option value="zm">Zambia</option>
+    <option value="zw">Zimbabwe</option>
+</select>
+                                </div>
 
-                            <div class="col-md-6 mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <label>Passport Number</label>
+                                    <input type="text" id="passport" class="form-control summary-input" required>
+                                </div>
 
-                                <label class="form-label">
-                                    Number of Person
-                                </label>
+                                <div class="col-md-6 mb-3">
+                                    <label>Date of Birth</label>
+                                    <input type="date" id="dob" class="form-control summary-input" required>
+                                </div>
 
-                                <select class="form-select" id="participants">
-
-                                    <option selected>Select Person</option>
-
-                                    <option value="1">1</option>
-
-                                    <option value="2">2</option>
-
-                                    <option value="3">3</option>
-
-                                    <option value="4">4</option>
-
-                                    <option value="5">5</option>
-
-                                </select>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <label class="form-label">
-                                    eVisa Options
-                                </label>
-
-                                <select class="form-select">
-
-                                    <option selected>Select Visa Type</option>
-
-                                    <option>Tourist Visa</option>
-
-                                    <option>Business Visa</option>
-
-                                   <option>Conference Visa</option>
-
-                                </select>
-
-                            </div>
-
-                          
-
-                            <div class="col-md-6 mb-4">
-
-                                <label class="form-label">
-                                    Arrival Port
-                                </label>
-
-                                <select class="form-select">
-
-                                    <option selected>Select Airport</option>
-
-                                    <option>Delhi</option>
-
-                                    <option>Mumbai</option>
-
-                                    <option>Chennai</option>
-
-                                    <option>Bangalore</option>
-
-                                    <option>Kolkata</option>
-
-                                </select>
-
-                            </div>
-
-                        </div>
-
-                        <!-- PROCESSING -->
-
-                        <h5 class="mb-3">
-                            Processing Time
-                        </h5>
-
-                        <div class="processing-options">
-
-                            <div class="form-check border rounded p-3 mb-3">
-
-                                <input class="form-check-input"
-                                       type="radio"
-                                       name="processing"
-                                       checked
-                                       value="0">
-
-                                <label class="form-check-label">
-
-                                    <strong>
-                                        Normal
-                                    </strong>
-
-                                    (5 Working Days)
-
-                                    <span class="float-end text-success">
-                                        USD 0
-                                    </span>
-
-                                </label>
-
-                                <div class="small text-muted mt-2">
-
-                                    Receive your visa in approximately
-                                    five working days.
-
+                                <div class="col-md-6 mb-3">
+                                    <label>Upload Passport Photo</label>
+                                    <input type="file" id="photo" class="form-control" accept="image/*" required>
                                 </div>
 
                             </div>
 
-                            <div class="form-check border rounded p-3 mb-3">
+                            <div class="text-end mt-4">
+                                <button class="btn btn-primary next-btn">
+                                    Next
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
 
-                                <input class="form-check-input"
-                                       type="radio"
-                                       name="processing"
-                                       value="59">
+                        </div>
 
-                                <label class="form-check-label">
+                        <!-- STEP 2 -->
+                        <div class="form-step">
 
-                                    <strong>
-                                        Urgent
-                                    </strong>
+                            <h4 class="mb-4">
+                                <i class="bi bi-airplane"></i>
+                                Trip Details
+                            </h4>
 
-                                    (4 Working Days)
+                            <div class="row">
 
-                                    <span class="float-end text-success">
-                                        USD 59
-                                    </span>
+                                <div class="col-md-6 mb-3">
+                                    <label>Current Country</label>
+                                    <select id="destination" class="form-select summary-input" required> 
+                                        
+    <option value="af">Afghanistan</option>
+    <option value="al">Albania</option>
+    <option value="dz">Algeria</option>
+    <option value="ad">Andorra</option>
+    <option value="ao">Angola</option>
+    <option value="ag">Antigua and Barbuda</option>
+    <option value="ar">Argentina</option>
+    <option value="am">Armenia</option>
+    <option value="au">Australia</option>
+    <option value="at">Austria</option>
+    <option value="az">Azerbaijan</option>
+    <option value="bs">Bahamas</option>
+    <option value="bh">Bahrain</option>
+    <option value="bd">Bangladesh</option>
+    <option value="bb">Barbados</option>
+    <option value="by">Belarus</option>
+    <option value="be">Belgium</option>
+    <option value="bz">Belize</option>
+    <option value="bj">Benin</option>
+    <option value="bt">Bhutan</option>
+    <option value="bo">Bolivia</option>
+    <option value="ba">Bosnia and Herzegovina</option>
+    <option value="bw">Botswana</option>
+    <option value="br">Brazil</option>
+    <option value="bn">Brunei</option>
+    <option value="bg">Bulgaria</option>
+    <option value="bf">Burkina Faso</option>
+    <option value="bi">Burundi</option>
+    <option value="cv">Cabo Verde</option>
+    <option value="kh">Cambodia</option>
+    <option value="cm">Cameroon</option>
+    <option value="ca">Canada</option>
+    <option value="cf">Central African Republic</option>
+    <option value="td">Chad</option>
+    <option value="cl">Chile</option>
+    <option value="cn">China</option>
+    <option value="co">Colombia</option>
+    <option value="km">Comoros</option>
+    <option value="cg">Congo</option>
+    <option value="cd">Congo (DRC)</option>
+    <option value="cr">Costa Rica</option>
+    <option value="ci">Côte d'Ivoire</option>
+    <option value="hr">Croatia</option>
+    <option value="cu">Cuba</option>
+    <option value="cy">Cyprus</option>
+    <option value="cz">Czech Republic</option>
+    <option value="dk">Denmark</option>
+    <option value="dj">Djibouti</option>
+    <option value="dm">Dominica</option>
+    <option value="do">Dominican Republic</option>
+    <option value="ec">Ecuador</option>
+    <option value="eg">Egypt</option>
+    <option value="sv">El Salvador</option>
+    <option value="gq">Equatorial Guinea</option>
+    <option value="er">Eritrea</option>
+    <option value="ee">Estonia</option>
+    <option value="sz">Eswatini</option>
+    <option value="et">Ethiopia</option>
+    <option value="fj">Fiji</option>
+    <option value="fi">Finland</option>
+    <option value="fr">France</option>
+    <option value="ga">Gabon</option>
+    <option value="gm">Gambia</option>
+    <option value="ge">Georgia</option>
+    <option value="de">Germany</option>
+    <option value="gh">Ghana</option>
+    <option value="gr">Greece</option>
+    <option value="gd">Grenada</option>
+    <option value="gt">Guatemala</option>
+    <option value="gn">Guinea</option>
+    <option value="gw">Guinea-Bissau</option>
+    <option value="gy">Guyana</option>
+    <option value="ht">Haiti</option>
+    <option value="hn">Honduras</option>
+    <option value="hu">Hungary</option>
+    <option value="is">Iceland</option>
+    <option value="in">India</option>
+    <option value="id">Indonesia</option>
+    <option value="ir">Iran</option>
+    <option value="iq">Iraq</option>
+    <option value="ie">Ireland</option>
+    <option value="il">Israel</option>
+    <option value="it">Italy</option>
+    <option value="jm">Jamaica</option>
+    <option value="jp">Japan</option>
+    <option value="jo">Jordan</option>
+    <option value="kz">Kazakhstan</option>
+    <option value="ke">Kenya</option>
+    <option value="ki">Kiribati</option>
+    <option value="kp">North Korea</option>
+    <option value="kr">South Korea</option>
+    <option value="kw">Kuwait</option>
+    <option value="kg">Kyrgyzstan</option>
+    <option value="la">Laos</option>
+    <option value="lv">Latvia</option>
+    <option value="lb">Lebanon</option>
+    <option value="ls">Lesotho</option>
+    <option value="lr">Liberia</option>
+    <option value="ly">Libya</option>
+    <option value="li">Liechtenstein</option>
+    <option value="lt">Lithuania</option>
+    <option value="lu">Luxembourg</option>
+    <option value="mg">Madagascar</option>
+    <option value="mw">Malawi</option>
+    <option value="my">Malaysia</option>
+    <option value="mv">Maldives</option>
+    <option value="ml">Mali</option>
+    <option value="mt">Malta</option>
+    <option value="mh">Marshall Islands</option>
+    <option value="mr">Mauritania</option>
+    <option value="mu">Mauritius</option>
+    <option value="mx">Mexico</option>
+    <option value="fm">Micronesia</option>
+    <option value="md">Moldova</option>
+    <option value="mc">Monaco</option>
+    <option value="mn">Mongolia</option>
+    <option value="me">Montenegro</option>
+    <option value="ma">Morocco</option>
+    <option value="mz">Mozambique</option>
+    <option value="mm">Myanmar</option>
+    <option value="na">Namibia</option>
+    <option value="nr">Nauru</option>
+    <option value="np">Nepal</option>
+    <option value="nl">Netherlands</option>
+    <option value="nz">New Zealand</option>
+    <option value="ni">Nicaragua</option>
+    <option value="ne">Niger</option>
+    <option value="ng">Nigeria</option>
+    <option value="mk">North Macedonia</option>
+    <option value="no">Norway</option>
+    <option value="om">Oman</option>
+    <option value="pk">Pakistan</option>
+    <option value="pw">Palau</option>
+    <option value="ps">Palestine</option>
+    <option value="pa">Panama</option>
+    <option value="pg">Papua New Guinea</option>
+    <option value="py">Paraguay</option>
+    <option value="pe">Peru</option>
+    <option value="ph">Philippines</option>
+    <option value="pl">Poland</option>
+    <option value="pt">Portugal</option>
+    <option value="qa">Qatar</option>
+    <option value="ro">Romania</option>
+    <option value="ru">Russia</option>
+    <option value="rw">Rwanda</option>
+    <option value="kn">Saint Kitts and Nevis</option>
+    <option value="lc">Saint Lucia</option>
+    <option value="vc">Saint Vincent and the Grenadines</option>
+    <option value="ws">Samoa</option>
+    <option value="sm">San Marino</option>
+    <option value="st">Sao Tome and Principe</option>
+    <option value="sa">Saudi Arabia</option>
+    <option value="sn">Senegal</option>
+    <option value="rs">Serbia</option>
+    <option value="sc">Seychelles</option>
+    <option value="sl">Sierra Leone</option>
+    <option value="sg">Singapore</option>
+    <option value="sk">Slovakia</option>
+    <option value="si">Slovenia</option>
+    <option value="sb">Solomon Islands</option>
+    <option value="so">Somalia</option>
+    <option value="za">South Africa</option>
+    <option value="ss">South Sudan</option>
+    <option value="es">Spain</option>
+    <option value="lk">Sri Lanka</option>
+    <option value="sd">Sudan</option>
+    <option value="sr">Suriname</option>
+    <option value="se">Sweden</option>
+    <option value="ch">Switzerland</option>
+    <option value="sy">Syria</option>
+    <option value="tw">Taiwan</option>
+    <option value="tj">Tajikistan</option>
+    <option value="tz">Tanzania</option>
+    <option value="th">Thailand</option>
+    <option value="tl">Timor-Leste</option>
+    <option value="tg">Togo</option>
+    <option value="to">Tonga</option>
+    <option value="tt">Trinidad and Tobago</option>
+    <option value="tn">Tunisia</option>
+    <option value="tr">Turkey</option>
+    <option value="tm">Turkmenistan</option>
+    <option value="tv">Tuvalu</option>
+    <option value="ug">Uganda</option>
+    <option value="ua">Ukraine</option>
+    <option value="ae">United Arab Emirates</option>
+    <option value="gb">United Kingdom</option>
+    <option value="us">United States</option>
+    <option value="uy">Uruguay</option>
+    <option value="uz">Uzbekistan</option>
+    <option value="vu">Vanuatu</option>
+    <option value="va">Vatican City</option>
+    <option value="ve">Venezuela</option>
+    <option value="vn">Vietnam</option>
+    <option value="ye">Yemen</option>
+    <option value="zm">Zambia</option>
+    <option value="zw">Zimbabwe</option>
+</select>
+                                </div>
 
-                                </label>
+                                <div class="col-md-6 mb-3">
+                                    <label>Visa Type</label>
+                                    <select id="visaType" class="form-select" required>
+
+                                        <option value="60">Tourist - $60</option>
+                                        <option value="90">Business - $90</option>
+                                        <option value="75">Conference - $75</option>
+										<option value="75">Transit - $75</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>Purpose of Travel</label>
+                                    <input type="text" id="purpose" class="form-control summary-input" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>No. of Travellers</label>
+                                    <input type="number" id="travellers" value="1" min="1"
+                                        class="form-control" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>Arrival Date</label>
+                                    <input type="date" id="arrival" class="form-control summary-input" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>Departure Date</label>
+                                    <input type="date" id="departure" class="form-control summary-input" required>
+                                </div>
 
                             </div>
 
-                            <div class="form-check border rounded p-3">
+                            <div class="d-flex justify-content-between mt-4">
 
-                                <input class="form-check-input"
-                                       type="radio"
-                                       name="processing"
-                                       value="99">
+                                <button class="btn btn-outline-secondary prev-btn">
+                                    <i class="bi bi-arrow-left"></i>
+                                    Previous
+                                </button>
 
-                                <label class="form-check-label">
-
-                                    <strong>
-                                        Super Urgent
-                                    </strong>
-
-                                    (3 Working Days)
-
-                                    <span class="float-end text-success">
-                                        USD 99
-                                    </span>
-
-                                </label>
+                                <button class="btn btn-primary next-btn">
+                                    Next
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
 
                             </div>
 
                         </div>
 
-                        
+                        <!-- STEP 3 -->
+                        <div class="form-step">
 
-                        <div class="text-center mt-5">
+                            <h4 class="mb-4">
+                                <i class="bi bi-credit-card"></i>
+                                Payment
+                            </h4>
 
-                             <button class="btn btn-warning px-5 py-2 text-white fw-semibold" data-bs-toggle="modal"
-            data-bs-target="#passengerModal">
-            Next
-        </button>
+                            <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
 
-                        </div>
+        <h5 class="fw-bold mb-4">
+            <i class="bi bi-credit-card"></i>
+            Select Payment Method
+        </h5>
 
-                    </form>
+        <!-- Credit Card -->
+        <div class="form-check mb-3">
+            <input class="form-check-input payment-method"
+                   type="radio"
+                   name="paymentMethod"
+                   id="creditCard"
+                   value="credit"
+                   checked>
 
-                </div>
-
-            </div>
-
+            <label class="form-check-label fw-semibold" for="creditCard">
+                <i class="bi bi-credit-card-2-front-fill text-primary"></i>
+                Credit Card
+            </label>
         </div>
 
-        <!-- RIGHT COLUMN -->
+        <!-- Debit Card -->
+        <div class="form-check mb-3">
+            <input class="form-check-input payment-method"
+                   type="radio"
+                   name="paymentMethod"
+                   id="debitCard"
+                   value="debit">
 
-        <div class="col-lg-4">
+            <label class="form-check-label fw-semibold" for="debitCard">
+                <i class="bi bi-credit-card-fill text-success"></i>
+                Debit Card
+            </label>
+        </div>
 
-            <div class="card shadow-sm ">
+        <!-- Stripe -->
+        <div class="form-check mb-3">
+            <input class="form-check-input payment-method"
+                   type="radio"
+                   name="paymentMethod"
+                   id="stripe"
+                   value="stripe">
 
-                <div class="card-body">
+            <label class="form-check-label fw-semibold" for="stripe">
+                Stripe
+            </label>
+        </div>
 
-                    <h4 class="mb-4">
+        <!-- PayPal -->
+        <div class="form-check mb-4">
+            <input class="form-check-input payment-method"
+                   type="radio"
+                   name="paymentMethod"
+                   id="paypal"
+                   value="paypal">
 
-                        Review Your Order
+            <label class="form-check-label fw-semibold" for="paypal">
+                PayPal
+            </label>
+        </div>
 
-                    </h4>
+    </div>
+</div>
 
-                    <div class="border rounded p-3 mb-3">
+<!-- Card Details -->
+<div class="card shadow-sm border-0 mb-4" id="cardSection">
 
-                        <h6>Trip Details</h6>
+    <div class="card-body">
 
-                        <hr>
+        <h5 class="mb-4">Card Details</h5>
 
-                        <p class="small mb-2">
-                            Members :
-                            <span id="reviewParticipants">
-                                1
-                            </span>
-                        </p>
+        <div class="row">
 
-                        <p class="small mb-2">
-                            Processing :
-                            <span id="reviewProcessing">
-                                Normal
-                            </span>
-                        </p>
+            <div class="col-md-12 mb-3">
+                <label>Card Holder Name</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="John Smith">
+            </div>
 
-                        <p class="small">
-                            Airport :
-                            <span id="reviewAirport">
-                                --
-                            </span>
-                        </p>
+            <div class="col-md-12 mb-3">
+                <label>Card Number</label>
+                <input type="text"
+                       class="form-control"
+                       maxlength="19"
+                       placeholder="1234 5678 9012 3456">
+            </div>
 
-                    </div>
+            <div class="col-md-6 mb-3">
+                <label>Expiry</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="MM/YY">
+            </div>
 
-                    <table class="table table-borderless">
-
-                        <tr>
-
-                            <td>Service Fee</td>
-
-                            <td class="text-end">
-                                USD 30
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>Processing Fee</td>
-
-                            <td class="text-end" id="processingPrice">
-
-                                USD 0
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>Assist Services</td>
-
-                            <td class="text-end" id="servicePrice">
-
-                                USD 0
-
-                            </td>
-
-                        </tr>
-
-                    </table>
-
-
-                    <hr>
-
-                    <div class="d-flex justify-content-between">
-
-                        <h4>Total</h4>
-
-                        <h3 class="text-success">
-
-                            USD
-
-                            <span id="totalPrice">
-
-                                0
-
-                            </span>
-
-                        </h3>
-
-                    </div>
-
-                    <div class="mt-4">
-
-                        <i class="bi bi-shield-check-fill text-success"></i>
-
-                        <small class="ms-2">
-
-                            Your information is safe with us.
-
-                        </small>
-
-                    </div>
-
-                </div>
-
+            <div class="col-md-6 mb-3">
+                <label>CVV</label>
+                <input type="password"
+                       class="form-control"
+                       maxlength="4"
+                       placeholder="123">
             </div>
 
         </div>
@@ -420,242 +1190,609 @@
     </div>
 
 </div>
-</section><!-- /Travel About Section -->
 
-    
+<!-- Stripe Message -->
+<div id="stripeBox" class="alert alert-info d-none">
 
+    <h6>Stripe Checkout</h6>
 
+    After clicking <strong>Submit Application</strong>, you will be redirected to the secure Stripe payment page.
 
+</div>
 
-                
-	<script>
-// ==============================
-// Visa Application Form Script
-// ==============================
+<!-- PayPal Message -->
+<div id="paypalBox" class="alert alert-warning d-none">
 
-document.addEventListener("DOMContentLoaded", function () {
+    <h6>PayPal Checkout</h6>
 
-    const participants = document.getElementById("participants");
+    After clicking <strong>Submit Application</strong>, you will be redirected to PayPal to complete your payment.
 
-    const airport = document.querySelectorAll("select")[2];
+</div>
 
-    const processingRadios = document.querySelectorAll('input[name="processing"]');
+                            <div class="form-check mb-4">
 
-    const services = document.querySelectorAll(".service");
+                                <input class="form-check-input" type="checkbox">
 
-    const reviewParticipants = document.getElementById("reviewParticipants");
+                                <label class="form-check-label">
 
-    const reviewAirport = document.getElementById("reviewAirport");
+                                    I agree to <a href="">Terms & Conditions</a>
 
-    const reviewProcessing = document.getElementById("reviewProcessing");
+                                </label>
 
-    const processingPrice = document.getElementById("processingPrice");
+                            </div>
 
-    const servicePrice = document.getElementById("servicePrice");
+                            <div class="d-flex justify-content-between">
 
-    const totalPrice = document.getElementById("totalPrice");
+                                <button class="btn btn-outline-secondary prev-btn">
 
-    const entryDate = document.querySelectorAll('input[type="date"]')[0];
+                                    <i class="bi bi-arrow-left"></i>
 
-    const exitDate = document.querySelectorAll('input[type="date"]')[1];
+                                    Previous
 
-    const form = document.getElementById("visaForm");
+                                </button>
 
-    const promoInput = document.querySelector(".input-group input");
+                                <button class="btn btn-success">
 
-    const promoBtn = document.querySelector(".input-group button");
+                                    <i class="bi bi-check-circle"></i>
 
-    let processingFee = 0;
+                                    Submit Application
 
-    let servicesFee = 30;
+                                </button>
 
-    let discount = 0;
+                            </div>
 
-    //----------------------------------
-    // Update Participants
-    //----------------------------------
+                        </div>
 
-    participants.addEventListener("change", function () {
+                    </div>
 
-        reviewParticipants.innerHTML = this.value;
+                </div>
+
+            </div>
+
+            <!-- ================= Right Sidebar ================= -->
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+
+                <div class="card shadow border-0 sticky-top summary-card">
+
+                    <div class="card-body">
+
+                        <h4 class="text-center mb-4">
+
+                            Application Summary
+
+                        </h4>
+
+                        <div class="text-center mb-3">
+
+                            <img src="https://placehold.co/150x150"
+                                id="photoPreview"
+                                class="rounded-circle border"
+                                width="150"
+                                height="150">
+
+                        </div>
+
+                        <hr>
+
+                        <h6 class="fw-bold">Personal Information</h6>
+
+                        <p><strong>Name:</strong>
+                            <span id="summaryName">-</span>
+                        </p>
+
+                        <p><strong>Email:</strong>
+                            <span id="summaryEmail">-</span>
+                        </p>
+
+                        <p><strong>Phone:</strong>
+                            <span id="summaryPhone">-</span>
+                        </p>
+
+                        <p><strong>Nationality:</strong>
+                            <span id="summaryCountry">-</span>
+                        </p>
+
+                        <p><strong>Passport:</strong>
+                            <span id="summaryPassport">-</span>
+                        </p>
+
+                        <hr>
+
+                        <h6 class="fw-bold">
+
+                            Trip Details
+
+                        </h6>
+
+                        <p><strong>Destination:</strong>
+
+                            <span id="summaryDestination">-</span>
+
+                        </p>
+
+                        <p><strong>Visa:</strong>
+
+                            <span id="summaryVisa">-</span>
+
+                        </p>
+
+                        <p><strong>Travellers:</strong>
+
+                            <span id="summaryTravellers">1</span>
+
+                        </p>
+
+                        <hr>
+
+                        <h6 class="fw-bold">
+
+                            Price Details
+
+                        </h6>
+
+                        <table class="table">
+
+                            <tr>
+
+                                <td>Visa Fee</td>
+
+                                <td class="text-end">
+
+                                    $<span id="visaFee">60</span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Service Fee</td>
+
+                                <td class="text-end">
+
+                                    $<span id="serviceFee">20</span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Tax</td>
+
+                                <td class="text-end">
+
+                                    $<span id="tax">18</span>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="table-primary fw-bold">
+
+                                <td>Total</td>
+
+                                <td class="text-end">
+
+                                    $<span id="grandTotal">98</span>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+
+    </section><!-- /Contact Section -->
+	<!-- Custom JS -->
+	
+	
+	
+	
+    <script>
+	// ===============================
+// Multi Step Visa Form
+// ===============================
+
+let currentStep = 0;
+
+const steps = document.querySelectorAll(".form-step");
+const nextBtns = document.querySelectorAll(".next-btn");
+const prevBtns = document.querySelectorAll(".prev-btn");
+const progressBar = document.getElementById("progressBar");
+
+// ===============================
+// Show Step
+// ===============================
+
+function showStep(step) {
+
+    steps.forEach((item, index) => {
+        item.classList.toggle("active", index === step);
+    });
+
+    const percentage = ((step + 1) / steps.length) * 100;
+    progressBar.style.width = percentage + "%";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+// ===============================
+// Validation
+// ===============================
+	function validateStep(step) {
+
+    let valid = true;
+
+    const inputs = steps[step].querySelectorAll("input, select, textarea");
+
+    inputs.forEach(input => {
+
+        input.classList.remove("is-invalid");
+
+        // Required
+        if (input.hasAttribute("required")) {
+
+            if (input.type === "checkbox") {
+
+                if (!input.checked) {
+
+                    input.classList.add("is-invalid");
+                    valid = false;
+
+                }
+
+            }
+
+            else if (input.type === "file") {
+
+                if (input.files.length === 0) {
+
+                    input.classList.add("is-invalid");
+                    valid = false;
+
+                }
+
+            }
+
+            else {
+
+                if (input.value.trim() === "") {
+
+                    input.classList.add("is-invalid");
+                    valid = false;
+
+                }
+
+            }
+
+        }
+
+        // Email
+
+        if (input.type === "email" && input.value !== "") {
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(input.value)) {
+
+                input.classList.add("is-invalid");
+                valid = false;
+
+            }
+
+        }
+
+        // Phone
+
+        if (input.id === "phone" && input.value !== "") {
+
+            const phonePattern = /^[0-9]{10,15}$/;
+
+            if (!phonePattern.test(input.value)) {
+
+                input.classList.add("is-invalid");
+                valid = false;
+
+            }
+
+        }
+
+        // Passport
+
+        if (input.id === "passport" && input.value !== "") {
+
+            const passportPattern = /^[A-Za-z0-9]{6,12}$/;
+
+            if (!passportPattern.test(input.value)) {
+
+                input.classList.add("is-invalid");
+                valid = false;
+
+            }
+
+        }
 
     });
 
-    //----------------------------------
-    // Airport
-    //----------------------------------
+    // Arrival & Departure validation
 
-    airport.addEventListener("change", function () {
+    if (step === 1) {
 
-        reviewAirport.innerHTML = this.value;
+        const arrival =
+            new Date(document.getElementById("arrival").value);
 
-    });
+        const departure =
+            new Date(document.getElementById("departure").value);
 
-    //----------------------------------
-    // Processing Fee
-    //----------------------------------
+        if (arrival >= departure) {
 
-    processingRadios.forEach(function (radio) {
+            document
+                .getElementById("departure")
+                .classList.add("is-invalid");
 
-        radio.addEventListener("change", function () {
+            valid = false;
 
-            processingFee = Number(this.value);
-
-            let name = "";
-
-            if (processingFee == 0)
-
-                name = "Normal";
-
-            else if (processingFee == 59)
-
-                name = "Urgent";
-
-            else
-
-                name = "Super Urgent";
-
-            reviewProcessing.innerHTML = name;
-
-            processingPrice.innerHTML = "USD " + processingFee.toFixed(2);
-
-            calculateTotal();
-
-        });
-
-    });
-
-    //----------------------------------
-    // Services
-    //----------------------------------
-
-    services.forEach(function (service) {
-
-        service.addEventListener("change", function () {
-
-            servicesFee = 0;
-
-            services.forEach(function (item) {
-
-                if (item.checked)
-
-                    servicesFee += Number(item.dataset.price);
-
-            });
-
-            servicePrice.innerHTML = "USD " + servicesFee.toFixed(2);
-
-            calculateTotal();
-
-        });
-
-    });
-
-    //----------------------------------
-    // Total
-    //----------------------------------
-
-    function calculateTotal() {
-
-        let total = processingFee + servicesFee - discount;
-
-        if (total < 0)
-
-            total = 0;
-
-        totalPrice.innerHTML = total.toFixed(2);
+        }
 
     }
 
-   
-    //----------------------------------
-    // Date Validation
-    //----------------------------------
+    return valid;
 
-    exitDate.addEventListener("change", function () {
+}
 
-        if (!entryDate.value)
+// ===============================
+// Next Buttons
+// ===============================
 
+nextBtns.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        if (!validateStep(currentStep))
             return;
 
-        let start = new Date(entryDate.value);
+        if (currentStep < steps.length - 1) {
 
-        let end = new Date(exitDate.value);
+            currentStep++;
 
-        if (end <= start) {
-
-            alert("Exit Date must be after Entry Date");
-
-            exitDate.value = "";
+            showStep(currentStep);
 
         }
 
     });
 
-    //----------------------------------
-    // Form Validation
-    //----------------------------------
+});
 
-    form.addEventListener("submit", function (e) {
+// ===============================
+// Previous Buttons
+// ===============================
 
-        e.preventDefault();
+prevBtns.forEach(btn => {
 
-        if (participants.selectedIndex == 0) {
+    btn.addEventListener("click", () => {
 
-            alert("Select Number of Participants");
+        if (currentStep > 0) {
 
-            participants.focus();
+            currentStep--;
 
-            return;
-
-        }
-
-        if (document.querySelectorAll("select")[1].selectedIndex == 0) {
-
-            alert("Select Visa Option");
-
-            return;
+            showStep(currentStep);
 
         }
-
-        if (entryDate.value == "") {
-
-            alert("Select Entry Date");
-
-            return;
-
-        }
-
-        if (exitDate.value == "") {
-
-            alert("Select Exit Date");
-
-            return;
-
-        }
-
-        if (airport.selectedIndex == 0) {
-
-            alert("Select Arrival Airport");
-
-            return;
-
-        }
-
-        alert("Form Validated Successfully!");
-
-        // window.location.href = "information.html";
 
     });
 
-    //----------------------------------
-    // Initialize
-    //----------------------------------
+});
 
-    calculateTotal();
+// ===============================
+// Live Summary
+// ===============================
+
+function updateSummary() {
+
+    document.getElementById("summaryName").textContent =
+        (document.getElementById("firstName").value + " " +
+            document.getElementById("lastName").value).trim() || "-";
+
+    document.getElementById("summaryEmail").textContent =
+        document.getElementById("email").value || "-";
+
+    document.getElementById("summaryPhone").textContent =
+        document.getElementById("phone").value || "-";
+
+    document.getElementById("summaryCountry").textContent =
+        document.getElementById("country").value || "-";
+
+    document.getElementById("summaryPassport").textContent =
+        document.getElementById("passport").value || "-";
+
+    document.getElementById("summaryDestination").textContent =
+        document.getElementById("destination").value || "-";
+
+    document.getElementById("summaryVisa").textContent =
+        document.getElementById("visaType").options[
+        document.getElementById("visaType").selectedIndex
+        ].text;
+
+    document.getElementById("summaryTravellers").textContent =
+        document.getElementById("travellers").value;
+
+}
+
+// ===============================
+// Input Events
+// ===============================
+
+document.querySelectorAll(".summary-input").forEach(input => {
+
+    input.addEventListener("input", updateSummary);
+
+    input.addEventListener("change", updateSummary);
+
+});
+
+// ===============================
+// Passport Preview
+// ===============================
+
+const photo = document.getElementById("photo");
+
+photo.addEventListener("change", function () {
+
+    const file = this.files[0];
+
+    if (!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+
+        document.getElementById("photoPreview").src = e.target.result;
+
+    }
+
+    reader.readAsDataURL(file);
+
+});
+
+// ===============================
+// Price Calculation
+// ===============================
+
+const visaType = document.getElementById("visaType");
+const travellers = document.getElementById("travellers");
+
+const visaFee = document.getElementById("visaFee");
+const serviceFee = document.getElementById("serviceFee");
+const tax = document.getElementById("tax");
+const grandTotal = document.getElementById("grandTotal");
+
+function calculatePrice() {
+
+    const visa = Number(visaType.value);
+
+    const persons = Number(travellers.value);
+
+    const visaTotal = visa * persons;
+
+    const service = 20;
+
+    const gst = Math.round((visaTotal + service) * 0.18);
+
+    const total = visaTotal + service + gst;
+
+    visaFee.textContent = visaTotal;
+
+    serviceFee.textContent = service;
+
+    tax.textContent = gst;
+
+    grandTotal.textContent = total;
+
+}
+
+visaType.addEventListener("change", () => {
+
+    calculatePrice();
+
+    updateSummary();
+
+});
+
+travellers.addEventListener("input", () => {
+
+    calculatePrice();
+
+    updateSummary();
+
+});
+
+// ===============================
+// Submit
+// ===============================
+
+const submitBtn = document.querySelector(".btn-success");
+
+submitBtn.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    if (!validateStep(currentStep))
+        return;
+
+    alert("🎉 Visa Application Submitted Successfully!");
+
+});
+
+// ===============================
+// Initialize
+// ===============================
+
+showStep(currentStep);
+
+updateSummary();
+
+calculatePrice();
+	</script>
+
+
+
+<script>
+const methods = document.querySelectorAll(".payment-method");
+
+const cardSection = document.getElementById("cardSection");
+const stripeBox = document.getElementById("stripeBox");
+const paypalBox = document.getElementById("paypalBox");
+
+methods.forEach(method => {
+
+    method.addEventListener("change", function () {
+
+        cardSection.classList.add("d-none");
+        stripeBox.classList.add("d-none");
+        paypalBox.classList.add("d-none");
+
+        switch (this.value) {
+
+            case "credit":
+            case "debit":
+
+                cardSection.classList.remove("d-none");
+                break;
+
+            case "stripe":
+
+                stripeBox.classList.remove("d-none");
+                break;
+
+            case "paypal":
+
+                paypalBox.classList.remove("d-none");
+                break;
+
+        }
+
+    });
 
 });
 </script>
+
+<script src="https://js.stripe.com/v3/"></script>
 
   </main>
 
