@@ -887,7 +887,7 @@ section,
 }
 
 .travel-hero .booking-form-wrapper .booking-form {
-  background-color: var(--surface-color);
+  background: linear-gradient(180deg, #FF9933, #FFFFFF, #138808);
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 85%);
@@ -916,7 +916,7 @@ section,
   padding: 12px 15px;
   font-size: 14px;
   color: var(--default-color);
-  background-color: var(--surface-color);
+  background-color: green;
   transition: all 0.3s ease;
 }
 
@@ -9265,3 +9265,426 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 
 }
+
+.card{
+
+border:none;
+
+border-radius:15px;
+
+}
+
+.card-header{
+
+background:#0d6efd;
+
+color:white;
+
+border-radius:15px 15px 0 0!important;
+
+}
+
+.form-control,
+.form-select{
+
+height:50px;
+
+}
+
+textarea{
+
+height:120px!important;
+
+}
+
+.error{
+
+border:2px solid red!important;
+
+}
+
+
+
+
+					
+					/* ===========================
+					   Progress Bar
+					=========================== */
+
+					.progress{
+						height:10px;
+						border-radius:50px;
+						background:#e9ecef;
+					}
+
+					.progress-bar{
+						border-radius:50px;
+						transition:.4s;
+					}
+
+					/* ===========================
+					   Cards
+					=========================== */
+
+					.card{
+						border:none;
+						border-radius:18px;
+						overflow:hidden;
+						box-shadow:0 10px 30px rgba(0,0,0,.08);
+					}
+
+					.card-body{
+						padding:35px;
+					}
+
+					/* ===========================
+					   Form Heading
+					=========================== */
+
+					.form-step h4{
+						font-size:24px;
+						font-weight:600;
+						margin-bottom:25px;
+					}
+
+					.form-step h4 i{
+						color:#0d6efd;
+						margin-right:10px;
+					}
+
+					/* ===========================
+					   Form Controls
+					=========================== */
+
+					.form-label{
+						font-weight:500;
+						margin-bottom:8px;
+					}
+
+					.form-control,
+					.form-select{
+
+						height:50px;
+						border-radius:10px;
+						border:1px solid #dcdcdc;
+						transition:.3s;
+						font-size:15px;
+
+					}
+
+					.form-control:focus,
+					.form-select:focus{
+
+						box-shadow:none;
+						border-color:#0d6efd;
+
+					}
+
+					/* File Upload */
+
+					input[type=file]{
+
+						padding:10px;
+
+					}
+
+
+					/* ===========================
+					   Multi Step
+					=========================== */
+
+					.form-step{
+
+						display:none;
+						animation:fade .4s ease;
+
+					}
+
+					.form-step.active{
+
+						display:block;
+
+					}
+
+					@keyframes fade{
+
+						from{
+
+							opacity:0;
+							transform:translateX(30px);
+
+						}
+
+						to{
+
+							opacity:1;
+							transform:translateX(0);
+
+						}
+
+					}
+
+					/* ===========================
+					   Summary Card
+					=========================== */
+
+					.summary-card{
+
+						top:30px;
+
+					}
+
+					.summary-card h4{
+
+						font-weight:600;
+
+					}
+
+					.summary-card img{
+
+						object-fit:cover;
+						border:5px solid #e9ecef;
+
+					}
+
+					/* ===========================
+					   Sidebar Text
+					=========================== */
+
+					.summary-card p{
+
+						margin-bottom:10px;
+						font-size:14px;
+
+					}
+
+					.summary-card strong{
+
+						color:#495057;
+
+					}
+
+					/* ===========================
+					   Price Table
+					=========================== */
+
+					.table{
+
+						margin-bottom:0;
+
+					}
+
+					.table td{
+
+						vertical-align:middle;
+
+					}
+
+					.table-primary{
+
+						background:#edf4ff !important;
+
+					}
+
+					/* ===========================
+					   Radio Buttons
+					=========================== */
+
+					.form-check{
+
+						padding:12px;
+						border:1px solid #e6e6e6;
+						border-radius:10px;
+						margin-bottom:12px;
+						transition:.3s;
+
+					}
+
+					.form-check:hover{
+
+						border-color:#0d6efd;
+						background:#f8fbff;
+
+					}
+
+					.form-check-input{
+
+						cursor:pointer;
+
+					}
+
+					.form-check-label{
+
+						cursor:pointer;
+
+					}
+
+					/* ===========================
+					   Checkbox
+					=========================== */
+
+					.form-check-input:checked{
+
+						background:#0d6efd;
+						border-color:#0d6efd;
+
+					}
+
+					/* ===========================
+					   Table
+					=========================== */
+
+					.table td{
+
+						padding:12px 0;
+
+					}
+
+					/* ===========================
+					   Sticky Sidebar
+					=========================== */
+
+					.sticky-top{
+
+						z-index:10;
+
+					}
+
+					/* ===========================
+					   Photo
+					=========================== */
+
+					#photoPreview{
+
+						width:150px;
+						height:150px;
+						border-radius:50%;
+						object-fit:cover;
+						background:#f1f1f1;
+
+					}
+
+					/* ===========================
+					   Inputs Hover
+					=========================== */
+
+					.form-control:hover,
+					.form-select:hover{
+
+						border-color:#0d6efd;
+
+					}
+
+					/* ===========================
+					   Section Divider
+					=========================== */
+
+					hr{
+
+						opacity:.15;
+
+					}
+
+					/* ===========================
+					   Responsive
+					=========================== */
+
+					@media(max-width:991px){
+
+					.summary-card{
+
+						margin-top:25px;
+						position:relative !important;
+
+					}
+
+					}
+
+					@media(max-width:768px){
+
+					.card-body{
+
+						padding:25px;
+
+					}
+
+					.form-step h4{
+
+						font-size:20px;
+
+					}
+
+					.btn{
+
+						width:100%;
+						margin-bottom:10px;
+
+					}
+
+					.d-flex{
+
+						flex-direction:column;
+
+					}
+
+					.text-end{
+
+						text-align:center !important;
+
+					}
+
+					}
+
+					@media(max-width:576px){
+
+					.container{
+
+						padding-left:15px;
+						padding-right:15px;
+
+					}
+
+					.card{
+
+						border-radius:12px;
+
+					}
+
+					#photoPreview{
+
+						width:120px;
+						height:120px;
+
+					}
+
+					.form-control,
+					.form-select{
+
+						height:46px;
+
+					}
+
+					}
+
+					/* ===========================
+					   Nice Scrollbar
+					=========================== */
+
+					::-webkit-scrollbar{
+
+						width:8px;
+
+					}
+
+					::-webkit-scrollbar-thumb{
+
+						background:#b6c2d1;
+						border-radius:50px;
+
+					}
+
+					::-webkit-scrollbar-thumb:hover{
+
+						background:#0d6efd;
+
+					}
