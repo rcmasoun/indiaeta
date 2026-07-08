@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Tour Bootstrap Template</title>
+  <title>Contact - Tour Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,465 +26,19 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
- 
- 
-  <style>
-  /* ===========================
-   Google Font
-=========================== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#2d3748;
-}
-
-/* ===========================
-   Heading
-=========================== */
-
-h2{
-    font-weight:700;
-}
-
-.text-muted{
-    font-size:15px;
-}
-
-/* ===========================
-   Progress Bar
-=========================== */
-
-.progress{
-    height:10px;
-    border-radius:50px;
-    background:#e9ecef;
-}
-
-.progress-bar{
-    border-radius:50px;
-    transition:.4s;
-}
-
-/* ===========================
-   Cards
-=========================== */
-
-.card{
-    border:none;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.card-body{
-    padding:35px;
-}
-
-/* ===========================
-   Form Heading
-=========================== */
-
-.form-step h4{
-    font-size:24px;
-    font-weight:600;
-    margin-bottom:25px;
-}
-
-.form-step h4 i{
-    color:#0d6efd;
-    margin-right:10px;
-}
-
-/* ===========================
-   Form Controls
-=========================== */
-
-.form-label{
-    font-weight:500;
-    margin-bottom:8px;
-}
-
-.form-control,
-.form-select{
-
-    height:50px;
-    border-radius:10px;
-    border:1px solid #dcdcdc;
-    transition:.3s;
-    font-size:15px;
-
-}
-
-.form-control:focus,
-.form-select:focus{
-
-    box-shadow:none;
-    border-color:#0d6efd;
-
-}
-
-/* File Upload */
-
-input[type=file]{
-
-    padding:10px;
-
-}
-
-/* ===========================
-   Buttons
-=========================== */
-
-.btn{
-
-    border-radius:10px;
-    padding:10px 25px;
-    font-weight:500;
-    transition:.3s;
-
-}
-
-.btn-primary{
-
-    background:#0d6efd;
-
-}
-
-.btn-primary:hover{
-
-    transform:translateY(-2px);
-
-}
-
-.btn-success:hover{
-
-    transform:translateY(-2px);
-
-}
-
-.btn-outline-secondary:hover{
-
-    transform:translateY(-2px);
-
-}
-
-/* ===========================
-   Multi Step
-=========================== */
-
-.form-step{
-
-    display:none;
-    animation:fade .4s ease;
-
-}
-
-.form-step.active{
-
-    display:block;
-
-}
-
-@keyframes fade{
-
-    from{
-
-        opacity:0;
-        transform:translateX(30px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateX(0);
-
-    }
-
-}
-
-/* ===========================
-   Summary Card
-=========================== */
-
-.summary-card{
-
-    top:30px;
-
-}
-
-.summary-card h4{
-
-    font-weight:600;
-
-}
-
-.summary-card img{
-
-    object-fit:cover;
-    border:5px solid #e9ecef;
-
-}
-
-/* ===========================
-   Sidebar Text
-=========================== */
-
-.summary-card p{
-
-    margin-bottom:10px;
-    font-size:14px;
-
-}
-
-.summary-card strong{
-
-    color:#495057;
-
-}
-
-/* ===========================
-   Price Table
-=========================== */
-
-.table{
-
-    margin-bottom:0;
-
-}
-
-.table td{
-
-    vertical-align:middle;
-
-}
-
-.table-primary{
-
-    background:#edf4ff !important;
-
-}
-
-/* ===========================
-   Radio Buttons
-=========================== */
-
-.form-check{
-
-    padding:12px;
-    border:1px solid #e6e6e6;
-    border-radius:10px;
-    margin-bottom:12px;
-    transition:.3s;
-
-}
-
-.form-check:hover{
-
-    border-color:#0d6efd;
-    background:#f8fbff;
-
-}
-
-.form-check-input{
-
-    cursor:pointer;
-
-}
-
-.form-check-label{
-
-    cursor:pointer;
-
-}
-
-/* ===========================
-   Checkbox
-=========================== */
-
-.form-check-input:checked{
-
-    background:#0d6efd;
-    border-color:#0d6efd;
-
-}
-
-/* ===========================
-   Table
-=========================== */
-
-.table td{
-
-    padding:12px 0;
-
-}
-
-/* ===========================
-   Sticky Sidebar
-=========================== */
-
-.sticky-top{
-
-    z-index:10;
-
-}
-
-/* ===========================
-   Photo
-=========================== */
-
-#photoPreview{
-
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    background:#f1f1f1;
-
-}
-
-/* ===========================
-   Inputs Hover
-=========================== */
-
-.form-control:hover,
-.form-select:hover{
-
-    border-color:#0d6efd;
-
-}
-
-/* ===========================
-   Section Divider
-=========================== */
-
-hr{
-
-    opacity:.15;
-
-}
-
-/* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:991px){
-
-.summary-card{
-
-    margin-top:25px;
-    position:relative !important;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.card-body{
-
-    padding:25px;
-
-}
-
-.form-step h4{
-
-    font-size:20px;
-
-}
-
-.btn{
-
-    width:100%;
-    margin-bottom:10px;
-
-}
-
-.d-flex{
-
-    flex-direction:column;
-
-}
-
-.text-end{
-
-    text-align:center !important;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.container{
-
-    padding-left:15px;
-    padding-right:15px;
-
-}
-
-.card{
-
-    border-radius:12px;
-
-}
-
-#photoPreview{
-
-    width:120px;
-    height:120px;
-
-}
-
-.form-control,
-.form-select{
-
-    height:46px;
-
-}
-
-}
-
-/* ===========================
-   Nice Scrollbar
-=========================== */
-
-::-webkit-scrollbar{
-
-    width:8px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#b6c2d1;
-    border-radius:50px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#0d6efd;
-
-}
- 
-  </style>
+  
+  
+  
+  
 </head>
 
-<body class="about-page">
+<body class="contact-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+ <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+       
          <img src="assets/img/logo.png" alt=""> 
    
       </a>
@@ -509,21 +63,21 @@ hr{
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/header1.jpg);">
       <div class="container position-relative">
-        <h1>India e-Visa Application</h1>
+        <h1>Contact Us</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li class="current">Contact Today</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Travel About Section -->
-    <section id="travel-about" class="travel-about section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
- 
+
 
     <div class="container py-5">
 
@@ -541,14 +95,14 @@ hr{
         <div class="row">
 
             <!-- ================= Left Form ================= -->
-            <div class="col-lg-8">
+            <div class="col-lg-12"  id="formColumn">
 
                 <div class="card shadow border-0">
 
                     <div class="card-body">
 
                         <!-- STEP 1 -->
-                        <div class="form-step active">
+                        <div class="form-step active ">
 
                             <h4 class="mb-4">
                                 <i class="bi bi-person-circle"></i>
@@ -809,7 +363,7 @@ hr{
                         </div>
 
                         <!-- STEP 2 -->
-                        <div class="form-step">
+                        <div class="form-step ">
 
                             <h4 class="mb-4">
                                 <i class="bi bi-airplane"></i>
@@ -821,204 +375,204 @@ hr{
                                 <div class="col-md-6 mb-3">
                                     <label>Current Country</label>
                                     <select id="destination" class="form-select summary-input" required> 
-                                        
-    <option value="af">Afghanistan</option>
-    <option value="al">Albania</option>
-    <option value="dz">Algeria</option>
-    <option value="ad">Andorra</option>
-    <option value="ao">Angola</option>
-    <option value="ag">Antigua and Barbuda</option>
-    <option value="ar">Argentina</option>
-    <option value="am">Armenia</option>
-    <option value="au">Australia</option>
-    <option value="at">Austria</option>
-    <option value="az">Azerbaijan</option>
-    <option value="bs">Bahamas</option>
-    <option value="bh">Bahrain</option>
-    <option value="bd">Bangladesh</option>
-    <option value="bb">Barbados</option>
-    <option value="by">Belarus</option>
-    <option value="be">Belgium</option>
-    <option value="bz">Belize</option>
-    <option value="bj">Benin</option>
-    <option value="bt">Bhutan</option>
-    <option value="bo">Bolivia</option>
-    <option value="ba">Bosnia and Herzegovina</option>
-    <option value="bw">Botswana</option>
-    <option value="br">Brazil</option>
-    <option value="bn">Brunei</option>
-    <option value="bg">Bulgaria</option>
-    <option value="bf">Burkina Faso</option>
-    <option value="bi">Burundi</option>
-    <option value="cv">Cabo Verde</option>
-    <option value="kh">Cambodia</option>
-    <option value="cm">Cameroon</option>
-    <option value="ca">Canada</option>
-    <option value="cf">Central African Republic</option>
-    <option value="td">Chad</option>
-    <option value="cl">Chile</option>
-    <option value="cn">China</option>
-    <option value="co">Colombia</option>
-    <option value="km">Comoros</option>
-    <option value="cg">Congo</option>
-    <option value="cd">Congo (DRC)</option>
-    <option value="cr">Costa Rica</option>
-    <option value="ci">Côte d'Ivoire</option>
-    <option value="hr">Croatia</option>
-    <option value="cu">Cuba</option>
-    <option value="cy">Cyprus</option>
-    <option value="cz">Czech Republic</option>
-    <option value="dk">Denmark</option>
-    <option value="dj">Djibouti</option>
-    <option value="dm">Dominica</option>
-    <option value="do">Dominican Republic</option>
-    <option value="ec">Ecuador</option>
-    <option value="eg">Egypt</option>
-    <option value="sv">El Salvador</option>
-    <option value="gq">Equatorial Guinea</option>
-    <option value="er">Eritrea</option>
-    <option value="ee">Estonia</option>
-    <option value="sz">Eswatini</option>
-    <option value="et">Ethiopia</option>
-    <option value="fj">Fiji</option>
-    <option value="fi">Finland</option>
-    <option value="fr">France</option>
-    <option value="ga">Gabon</option>
-    <option value="gm">Gambia</option>
-    <option value="ge">Georgia</option>
-    <option value="de">Germany</option>
-    <option value="gh">Ghana</option>
-    <option value="gr">Greece</option>
-    <option value="gd">Grenada</option>
-    <option value="gt">Guatemala</option>
-    <option value="gn">Guinea</option>
-    <option value="gw">Guinea-Bissau</option>
-    <option value="gy">Guyana</option>
-    <option value="ht">Haiti</option>
-    <option value="hn">Honduras</option>
-    <option value="hu">Hungary</option>
-    <option value="is">Iceland</option>
-    <option value="in">India</option>
-    <option value="id">Indonesia</option>
-    <option value="ir">Iran</option>
-    <option value="iq">Iraq</option>
-    <option value="ie">Ireland</option>
-    <option value="il">Israel</option>
-    <option value="it">Italy</option>
-    <option value="jm">Jamaica</option>
-    <option value="jp">Japan</option>
-    <option value="jo">Jordan</option>
-    <option value="kz">Kazakhstan</option>
-    <option value="ke">Kenya</option>
-    <option value="ki">Kiribati</option>
-    <option value="kp">North Korea</option>
-    <option value="kr">South Korea</option>
-    <option value="kw">Kuwait</option>
-    <option value="kg">Kyrgyzstan</option>
-    <option value="la">Laos</option>
-    <option value="lv">Latvia</option>
-    <option value="lb">Lebanon</option>
-    <option value="ls">Lesotho</option>
-    <option value="lr">Liberia</option>
-    <option value="ly">Libya</option>
-    <option value="li">Liechtenstein</option>
-    <option value="lt">Lithuania</option>
-    <option value="lu">Luxembourg</option>
-    <option value="mg">Madagascar</option>
-    <option value="mw">Malawi</option>
-    <option value="my">Malaysia</option>
-    <option value="mv">Maldives</option>
-    <option value="ml">Mali</option>
-    <option value="mt">Malta</option>
-    <option value="mh">Marshall Islands</option>
-    <option value="mr">Mauritania</option>
-    <option value="mu">Mauritius</option>
-    <option value="mx">Mexico</option>
-    <option value="fm">Micronesia</option>
-    <option value="md">Moldova</option>
-    <option value="mc">Monaco</option>
-    <option value="mn">Mongolia</option>
-    <option value="me">Montenegro</option>
-    <option value="ma">Morocco</option>
-    <option value="mz">Mozambique</option>
-    <option value="mm">Myanmar</option>
-    <option value="na">Namibia</option>
-    <option value="nr">Nauru</option>
-    <option value="np">Nepal</option>
-    <option value="nl">Netherlands</option>
-    <option value="nz">New Zealand</option>
-    <option value="ni">Nicaragua</option>
-    <option value="ne">Niger</option>
-    <option value="ng">Nigeria</option>
-    <option value="mk">North Macedonia</option>
-    <option value="no">Norway</option>
-    <option value="om">Oman</option>
-    <option value="pk">Pakistan</option>
-    <option value="pw">Palau</option>
-    <option value="ps">Palestine</option>
-    <option value="pa">Panama</option>
-    <option value="pg">Papua New Guinea</option>
-    <option value="py">Paraguay</option>
-    <option value="pe">Peru</option>
-    <option value="ph">Philippines</option>
-    <option value="pl">Poland</option>
-    <option value="pt">Portugal</option>
-    <option value="qa">Qatar</option>
-    <option value="ro">Romania</option>
-    <option value="ru">Russia</option>
-    <option value="rw">Rwanda</option>
-    <option value="kn">Saint Kitts and Nevis</option>
-    <option value="lc">Saint Lucia</option>
-    <option value="vc">Saint Vincent and the Grenadines</option>
-    <option value="ws">Samoa</option>
-    <option value="sm">San Marino</option>
-    <option value="st">Sao Tome and Principe</option>
-    <option value="sa">Saudi Arabia</option>
-    <option value="sn">Senegal</option>
-    <option value="rs">Serbia</option>
-    <option value="sc">Seychelles</option>
-    <option value="sl">Sierra Leone</option>
-    <option value="sg">Singapore</option>
-    <option value="sk">Slovakia</option>
-    <option value="si">Slovenia</option>
-    <option value="sb">Solomon Islands</option>
-    <option value="so">Somalia</option>
-    <option value="za">South Africa</option>
-    <option value="ss">South Sudan</option>
-    <option value="es">Spain</option>
-    <option value="lk">Sri Lanka</option>
-    <option value="sd">Sudan</option>
-    <option value="sr">Suriname</option>
-    <option value="se">Sweden</option>
-    <option value="ch">Switzerland</option>
-    <option value="sy">Syria</option>
-    <option value="tw">Taiwan</option>
-    <option value="tj">Tajikistan</option>
-    <option value="tz">Tanzania</option>
-    <option value="th">Thailand</option>
-    <option value="tl">Timor-Leste</option>
-    <option value="tg">Togo</option>
-    <option value="to">Tonga</option>
-    <option value="tt">Trinidad and Tobago</option>
-    <option value="tn">Tunisia</option>
-    <option value="tr">Turkey</option>
-    <option value="tm">Turkmenistan</option>
-    <option value="tv">Tuvalu</option>
-    <option value="ug">Uganda</option>
-    <option value="ua">Ukraine</option>
-    <option value="ae">United Arab Emirates</option>
-    <option value="gb">United Kingdom</option>
-    <option value="us">United States</option>
-    <option value="uy">Uruguay</option>
-    <option value="uz">Uzbekistan</option>
-    <option value="vu">Vanuatu</option>
-    <option value="va">Vatican City</option>
-    <option value="ve">Venezuela</option>
-    <option value="vn">Vietnam</option>
-    <option value="ye">Yemen</option>
-    <option value="zm">Zambia</option>
-    <option value="zw">Zimbabwe</option>
-</select>
+																				
+											<option value="af">Afghanistan</option>
+											<option value="al">Albania</option>
+											<option value="dz">Algeria</option>
+											<option value="ad">Andorra</option>
+											<option value="ao">Angola</option>
+											<option value="ag">Antigua and Barbuda</option>
+											<option value="ar">Argentina</option>
+											<option value="am">Armenia</option>
+											<option value="au">Australia</option>
+											<option value="at">Austria</option>
+											<option value="az">Azerbaijan</option>
+											<option value="bs">Bahamas</option>
+											<option value="bh">Bahrain</option>
+											<option value="bd">Bangladesh</option>
+											<option value="bb">Barbados</option>
+											<option value="by">Belarus</option>
+											<option value="be">Belgium</option>
+											<option value="bz">Belize</option>
+											<option value="bj">Benin</option>
+											<option value="bt">Bhutan</option>
+											<option value="bo">Bolivia</option>
+											<option value="ba">Bosnia and Herzegovina</option>
+											<option value="bw">Botswana</option>
+											<option value="br">Brazil</option>
+											<option value="bn">Brunei</option>
+											<option value="bg">Bulgaria</option>
+											<option value="bf">Burkina Faso</option>
+											<option value="bi">Burundi</option>
+											<option value="cv">Cabo Verde</option>
+											<option value="kh">Cambodia</option>
+											<option value="cm">Cameroon</option>
+											<option value="ca">Canada</option>
+											<option value="cf">Central African Republic</option>
+											<option value="td">Chad</option>
+											<option value="cl">Chile</option>
+											<option value="cn">China</option>
+											<option value="co">Colombia</option>
+											<option value="km">Comoros</option>
+											<option value="cg">Congo</option>
+											<option value="cd">Congo (DRC)</option>
+											<option value="cr">Costa Rica</option>
+											<option value="ci">Côte d'Ivoire</option>
+											<option value="hr">Croatia</option>
+											<option value="cu">Cuba</option>
+											<option value="cy">Cyprus</option>
+											<option value="cz">Czech Republic</option>
+											<option value="dk">Denmark</option>
+											<option value="dj">Djibouti</option>
+											<option value="dm">Dominica</option>
+											<option value="do">Dominican Republic</option>
+											<option value="ec">Ecuador</option>
+											<option value="eg">Egypt</option>
+											<option value="sv">El Salvador</option>
+											<option value="gq">Equatorial Guinea</option>
+											<option value="er">Eritrea</option>
+											<option value="ee">Estonia</option>
+											<option value="sz">Eswatini</option>
+											<option value="et">Ethiopia</option>
+											<option value="fj">Fiji</option>
+											<option value="fi">Finland</option>
+											<option value="fr">France</option>
+											<option value="ga">Gabon</option>
+											<option value="gm">Gambia</option>
+											<option value="ge">Georgia</option>
+											<option value="de">Germany</option>
+											<option value="gh">Ghana</option>
+											<option value="gr">Greece</option>
+											<option value="gd">Grenada</option>
+											<option value="gt">Guatemala</option>
+											<option value="gn">Guinea</option>
+											<option value="gw">Guinea-Bissau</option>
+											<option value="gy">Guyana</option>
+											<option value="ht">Haiti</option>
+											<option value="hn">Honduras</option>
+											<option value="hu">Hungary</option>
+											<option value="is">Iceland</option>
+											<option value="in">India</option>
+											<option value="id">Indonesia</option>
+											<option value="ir">Iran</option>
+											<option value="iq">Iraq</option>
+											<option value="ie">Ireland</option>
+											<option value="il">Israel</option>
+											<option value="it">Italy</option>
+											<option value="jm">Jamaica</option>
+											<option value="jp">Japan</option>
+											<option value="jo">Jordan</option>
+											<option value="kz">Kazakhstan</option>
+											<option value="ke">Kenya</option>
+											<option value="ki">Kiribati</option>
+											<option value="kp">North Korea</option>
+											<option value="kr">South Korea</option>
+											<option value="kw">Kuwait</option>
+											<option value="kg">Kyrgyzstan</option>
+											<option value="la">Laos</option>
+											<option value="lv">Latvia</option>
+											<option value="lb">Lebanon</option>
+											<option value="ls">Lesotho</option>
+											<option value="lr">Liberia</option>
+											<option value="ly">Libya</option>
+											<option value="li">Liechtenstein</option>
+											<option value="lt">Lithuania</option>
+											<option value="lu">Luxembourg</option>
+											<option value="mg">Madagascar</option>
+											<option value="mw">Malawi</option>
+											<option value="my">Malaysia</option>
+											<option value="mv">Maldives</option>
+											<option value="ml">Mali</option>
+											<option value="mt">Malta</option>
+											<option value="mh">Marshall Islands</option>
+											<option value="mr">Mauritania</option>
+											<option value="mu">Mauritius</option>
+											<option value="mx">Mexico</option>
+											<option value="fm">Micronesia</option>
+											<option value="md">Moldova</option>
+											<option value="mc">Monaco</option>
+											<option value="mn">Mongolia</option>
+											<option value="me">Montenegro</option>
+											<option value="ma">Morocco</option>
+											<option value="mz">Mozambique</option>
+											<option value="mm">Myanmar</option>
+											<option value="na">Namibia</option>
+											<option value="nr">Nauru</option>
+											<option value="np">Nepal</option>
+											<option value="nl">Netherlands</option>
+											<option value="nz">New Zealand</option>
+											<option value="ni">Nicaragua</option>
+											<option value="ne">Niger</option>
+											<option value="ng">Nigeria</option>
+											<option value="mk">North Macedonia</option>
+											<option value="no">Norway</option>
+											<option value="om">Oman</option>
+											<option value="pk">Pakistan</option>
+											<option value="pw">Palau</option>
+											<option value="ps">Palestine</option>
+											<option value="pa">Panama</option>
+											<option value="pg">Papua New Guinea</option>
+											<option value="py">Paraguay</option>
+											<option value="pe">Peru</option>
+											<option value="ph">Philippines</option>
+											<option value="pl">Poland</option>
+											<option value="pt">Portugal</option>
+											<option value="qa">Qatar</option>
+											<option value="ro">Romania</option>
+											<option value="ru">Russia</option>
+											<option value="rw">Rwanda</option>
+											<option value="kn">Saint Kitts and Nevis</option>
+											<option value="lc">Saint Lucia</option>
+											<option value="vc">Saint Vincent and the Grenadines</option>
+											<option value="ws">Samoa</option>
+											<option value="sm">San Marino</option>
+											<option value="st">Sao Tome and Principe</option>
+											<option value="sa">Saudi Arabia</option>
+											<option value="sn">Senegal</option>
+											<option value="rs">Serbia</option>
+											<option value="sc">Seychelles</option>
+											<option value="sl">Sierra Leone</option>
+											<option value="sg">Singapore</option>
+											<option value="sk">Slovakia</option>
+											<option value="si">Slovenia</option>
+											<option value="sb">Solomon Islands</option>
+											<option value="so">Somalia</option>
+											<option value="za">South Africa</option>
+											<option value="ss">South Sudan</option>
+											<option value="es">Spain</option>
+											<option value="lk">Sri Lanka</option>
+											<option value="sd">Sudan</option>
+											<option value="sr">Suriname</option>
+											<option value="se">Sweden</option>
+											<option value="ch">Switzerland</option>
+											<option value="sy">Syria</option>
+											<option value="tw">Taiwan</option>
+											<option value="tj">Tajikistan</option>
+											<option value="tz">Tanzania</option>
+											<option value="th">Thailand</option>
+											<option value="tl">Timor-Leste</option>
+											<option value="tg">Togo</option>
+											<option value="to">Tonga</option>
+											<option value="tt">Trinidad and Tobago</option>
+											<option value="tn">Tunisia</option>
+											<option value="tr">Turkey</option>
+											<option value="tm">Turkmenistan</option>
+											<option value="tv">Tuvalu</option>
+											<option value="ug">Uganda</option>
+											<option value="ua">Ukraine</option>
+											<option value="ae">United Arab Emirates</option>
+											<option value="gb">United Kingdom</option>
+											<option value="us">United States</option>
+											<option value="uy">Uruguay</option>
+											<option value="uz">Uzbekistan</option>
+											<option value="vu">Vanuatu</option>
+											<option value="va">Vatican City</option>
+											<option value="ve">Venezuela</option>
+											<option value="vn">Vietnam</option>
+											<option value="ye">Yemen</option>
+											<option value="zm">Zambia</option>
+											<option value="zw">Zimbabwe</option>
+										</select>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
@@ -1073,7 +627,7 @@ hr{
                         </div>
 
                         <!-- STEP 3 -->
-                        <div class="form-step">
+                        <div class="form-step ">
 
                             <h4 class="mb-4">
                                 <i class="bi bi-credit-card"></i>
@@ -1081,133 +635,133 @@ hr{
                             </h4>
 
                             <div class="card border-0 shadow-sm mb-4">
-    <div class="card-body">
+								<div class="card-body">
 
-        <h5 class="fw-bold mb-4">
-            <i class="bi bi-credit-card"></i>
-            Select Payment Method
-        </h5>
+									<h5 class="fw-bold mb-4">
+										<i class="bi bi-credit-card"></i>
+										Select Payment Method
+									</h5>
 
-        <!-- Credit Card -->
-        <div class="form-check mb-3">
-            <input class="form-check-input payment-method"
-                   type="radio"
-                   name="paymentMethod"
-                   id="creditCard"
-                   value="credit"
-                   checked>
+									<!-- Credit Card -->
+									<div class="form-check mb-3">
+										<input class="form-check-input payment-method"
+											   type="radio"
+											   name="paymentMethod"
+											   id="creditCard"
+											   value="credit"
+											   checked>
 
-            <label class="form-check-label fw-semibold" for="creditCard">
-                <i class="bi bi-credit-card-2-front-fill text-primary"></i>
-                Credit Card
-            </label>
-        </div>
+										<label class="form-check-label fw-semibold" for="creditCard">
+											<i class="bi bi-credit-card-2-front-fill text-primary"></i>
+											Credit Card
+										</label>
+									</div>
 
-        <!-- Debit Card -->
-        <div class="form-check mb-3">
-            <input class="form-check-input payment-method"
-                   type="radio"
-                   name="paymentMethod"
-                   id="debitCard"
-                   value="debit">
+									<!-- Debit Card -->
+									<div class="form-check mb-3">
+										<input class="form-check-input payment-method"
+											   type="radio"
+											   name="paymentMethod"
+											   id="debitCard"
+											   value="debit">
 
-            <label class="form-check-label fw-semibold" for="debitCard">
-                <i class="bi bi-credit-card-fill text-success"></i>
-                Debit Card
-            </label>
-        </div>
+										<label class="form-check-label fw-semibold" for="debitCard">
+											<i class="bi bi-credit-card-fill text-success"></i>
+											Debit Card
+										</label>
+									</div>
 
-        <!-- Stripe -->
-        <div class="form-check mb-3">
-            <input class="form-check-input payment-method"
-                   type="radio"
-                   name="paymentMethod"
-                   id="stripe"
-                   value="stripe">
+									<!-- Stripe -->
+									<div class="form-check mb-3">
+										<input class="form-check-input payment-method"
+											   type="radio"
+											   name="paymentMethod"
+											   id="stripe"
+											   value="stripe">
 
-            <label class="form-check-label fw-semibold" for="stripe">
-                Stripe
-            </label>
-        </div>
+										<label class="form-check-label fw-semibold" for="stripe">
+											Stripe
+										</label>
+									</div>
 
-        <!-- PayPal -->
-        <div class="form-check mb-4">
-            <input class="form-check-input payment-method"
-                   type="radio"
-                   name="paymentMethod"
-                   id="paypal"
-                   value="paypal">
+									<!-- PayPal -->
+									<div class="form-check mb-4">
+										<input class="form-check-input payment-method"
+											   type="radio"
+											   name="paymentMethod"
+											   id="paypal"
+											   value="paypal">
 
-            <label class="form-check-label fw-semibold" for="paypal">
-                PayPal
-            </label>
-        </div>
+										<label class="form-check-label fw-semibold" for="paypal">
+											PayPal
+										</label>
+									</div>
 
-    </div>
-</div>
+								</div>
+							</div>
 
-<!-- Card Details -->
-<div class="card shadow-sm border-0 mb-4" id="cardSection">
+					<!-- Card Details -->
+					<div class="card shadow-sm border-0 mb-4" id="cardSection">
 
-    <div class="card-body">
+						<div class="card-body">
 
-        <h5 class="mb-4">Card Details</h5>
+							<h5 class="mb-4">Card Details</h5>
 
-        <div class="row">
+							<div class="row">
 
-            <div class="col-md-12 mb-3">
-                <label>Card Holder Name</label>
-                <input type="text"
-                       class="form-control"
-                       placeholder="John Smith">
-            </div>
+								<div class="col-md-12 mb-3">
+									<label>Card Holder Name</label>
+									<input type="text"
+										   class="form-control"
+										   placeholder="John Smith">
+								</div>
 
-            <div class="col-md-12 mb-3">
-                <label>Card Number</label>
-                <input type="text"
-                       class="form-control"
-                       maxlength="19"
-                       placeholder="1234 5678 9012 3456">
-            </div>
+								<div class="col-md-12 mb-3">
+									<label>Card Number</label>
+									<input type="text"
+										   class="form-control"
+										   maxlength="19"
+										   placeholder="1234 5678 9012 3456">
+								</div>
 
-            <div class="col-md-6 mb-3">
-                <label>Expiry</label>
-                <input type="text"
-                       class="form-control"
-                       placeholder="MM/YY">
-            </div>
+								<div class="col-md-6 mb-3">
+									<label>Expiry</label>
+									<input type="text"
+										   class="form-control"
+										   placeholder="MM/YY">
+								</div>
 
-            <div class="col-md-6 mb-3">
-                <label>CVV</label>
-                <input type="password"
-                       class="form-control"
-                       maxlength="4"
-                       placeholder="123">
-            </div>
+								<div class="col-md-6 mb-3">
+									<label>CVV</label>
+									<input type="password"
+										   class="form-control"
+										   maxlength="4"
+										   placeholder="123">
+								</div>
 
-        </div>
+							</div>
 
-    </div>
+						</div>
 
-</div>
+					</div>
 
-<!-- Stripe Message -->
-<div id="stripeBox" class="alert alert-info d-none">
+							<!-- Stripe Message -->
+							<div id="stripeBox" class="alert alert-info d-none">
 
-    <h6>Stripe Checkout</h6>
+								<h6>Stripe Checkout</h6>
 
-    After clicking <strong>Submit Application</strong>, you will be redirected to the secure Stripe payment page.
+								After clicking <strong>Submit Application</strong>, you will be redirected to the secure Stripe payment page.
 
-</div>
+							</div>
 
-<!-- PayPal Message -->
-<div id="paypalBox" class="alert alert-warning d-none">
+							<!-- PayPal Message -->
+							<div id="paypalBox" class="alert alert-warning d-none">
 
-    <h6>PayPal Checkout</h6>
+								<h6>PayPal Checkout</h6>
 
-    After clicking <strong>Submit Application</strong>, you will be redirected to PayPal to complete your payment.
+								After clicking <strong>Submit Application</strong>, you will be redirected to PayPal to complete your payment.
 
-</div>
+							</div>
 
                             <div class="form-check mb-4">
 
@@ -1243,19 +797,20 @@ hr{
 
                         </div>
 
-                    </div>
+                 
+  </div>
 
-                </div>
-
-            </div>
+                        </div>
+						</div>
+            
 
             <!-- ================= Right Sidebar ================= -->
 
-            <div class="col-lg-4 mt-4 mt-lg-0">
 
-                <div class="card shadow border-0 sticky-top summary-card">
+<div class="col-lg-4 mt-4 mt-lg-0 d-none" id="summarySidebar">
 
-                    <div class="card-body">
+    <div class="card shadow border-0 sticky-top summary-card">
+			<div class="card-body">
 
                         <h4 class="text-center mb-4">
 
@@ -1386,8 +941,10 @@ hr{
                     </div>
 
                 </div>
+					</div>
 
-            </div>
+                </div>
+            
 
         </div>
 
@@ -1415,20 +972,47 @@ const progressBar = document.getElementById("progressBar");
 // ===============================
 // Show Step
 // ===============================
-
 function showStep(step) {
+
+    currentStep = step;
 
     steps.forEach((item, index) => {
         item.classList.toggle("active", index === step);
     });
 
-    const percentage = ((step + 1) / steps.length) * 100;
-    progressBar.style.width = percentage + "%";
+    progressBar.style.width =
+        ((step + 1) / steps.length) * 100 + "%";
+
+    const sidebar = document.getElementById("summarySidebar");
+    const formColumn = document.getElementById("formColumn");
+
+    // Step 1 & 2
+    if (step < 2) {
+
+        sidebar.classList.add("d-none");
+
+        formColumn.classList.remove("col-lg-8");
+
+        formColumn.classList.add("col-lg-12");
+
+    }
+
+    // Step 3
+    else {
+
+        sidebar.classList.remove("d-none");
+
+        formColumn.classList.remove("col-lg-12");
+
+        formColumn.classList.add("col-lg-8");
+
+    }
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+
 }
 
 // ===============================
@@ -1793,10 +1377,9 @@ methods.forEach(method => {
 </script>
 
 <script src="https://js.stripe.com/v3/"></script>
-
   </main>
 
- <footer id="footer" class="footer position-relative dark-background">
+  <footer id="footer" class="footer position-relative dark-background">
 
     <div class="footer-newsletter">
       <div class="container">
